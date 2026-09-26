@@ -1,0 +1,14 @@
+[project]
+name = "fortnox-automation"
+version = "0.1.0"
+description = "A secure Fortnox API wrapper and multi-agent automation core"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+fortnox = "fortnox_automation.cli:main"
+fortnox-mcp = "fortnox_automation.mcp_server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
